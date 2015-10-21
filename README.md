@@ -1,4 +1,4 @@
-This is a test push
+This is a test push for heroku
 # Auth0 + Ionic + API Sample
 
 This is a sample Ionic project that uses Auth0 for Authentication. 
