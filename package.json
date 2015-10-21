@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "basic-sample: An Ionic project",
   "engines": {
-    "npm": "2.0.2"
+    "npm": "2.0.2",
+    "node": "0.10.36"
   },
-  "engine": "node 0.10.36",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^0.7.1",
