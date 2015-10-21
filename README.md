@@ -1,4 +1,4 @@
-This is a test push for heroku
+[ ![Codeship Status for RyanMilb/auth0-moft-test](https://codeship.com/projects/f7a93c30-599b-0133-03d1-72256058fde0/status?branch=master)](https://codeship.com/projects/110102)
 # Auth0 + Ionic + API Sample
 
 This is a sample Ionic project that uses Auth0 for Authentication. 
