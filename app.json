@@ -1,0 +1,7 @@
+{
+    "name": "RyanMilb's Dev Workflow test",
+    "description": "Git > Github > Codeship > Heroku",
+    "repository": "https://github.com/RyanMilb/auth0-moft-test",
+    "_logo": "http://pathToYourLogo.png",
+    "keywords": ["ionic", "heroku", "angular", "codeship"]
+}
