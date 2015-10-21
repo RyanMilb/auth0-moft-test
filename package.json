@@ -19,7 +19,7 @@
     "shelljs": "^0.3.0"
   },
     "scripts": {
-    "postinstall": ionic serve -s -c --lab",
+    "postinstall": "ionic serve -s -c --lab",
     "test": "grunt test -v"
   },
   "cordovaPlugins": [
