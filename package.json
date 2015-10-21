@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "basic-sample: An Ionic project",
   "engines": {
-    "npm": "2.1.x"
+    "npm": "2.0.2"
   },
   "engine": "node 0.10.36",
   "dependencies": {
