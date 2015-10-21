@@ -2,6 +2,9 @@
   "name": "basic-sample",
   "version": "1.0.0",
   "description": "basic-sample: An Ionic project",
+  "engines": {
+    "npm": "2.1.x"
+  },
   "engine": "node 0.10.36",
   "dependencies": {
     "gulp": "^3.5.6",
