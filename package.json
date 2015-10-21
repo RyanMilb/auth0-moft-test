@@ -20,7 +20,7 @@
   },
     "scripts": {
     "preinstall": "npm install -g cordova ionic",
-    "postinstall": "ionic serve -s -c --lab",
+    "postinstall": "ionic serve -s -c --lab --address localhost",
     "test": "grunt test -v"
   },
   "cordovaPlugins": [
