@@ -1,3 +1,4 @@
+This is a test push
 # Auth0 + Ionic + API Sample
 
 This is a sample Ionic project that uses Auth0 for Authentication. 
