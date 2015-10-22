@@ -1,5 +1,7 @@
 [ ![Codeship Status for RyanMilb/auth0-moft-test](https://codeship.com/projects/f7a93c30-599b-0133-03d1-72256058fde0/status?branch=master)](https://codeship.com/projects/110102)
-# Auth0 + Ionic + API Sample
+# Auth0 + Ionic + Heroku
+Deployed here:
+https://merchants-of-the-future.herokuapp.com
 
 This is a sample Ionic project that uses Auth0 for Authentication. 
 It's the basic [tabs](https://github.com/driftyco/ionic-starter-tabs) example from [Ionic](http://ionicframework.com/) with the added authentication from Auth0.
@@ -19,8 +21,4 @@ OR To start server.js with Express
 
 1. `npm install`
 1. `npm start`
-
-Enjoy your Ionic app now :).
-
-<img src="https://cloudup.com/iMmARAM4VJZ+" />
 
