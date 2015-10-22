@@ -15,6 +15,12 @@ Once you have that, just clone the project and run the following:
 2. `ionic build ios`
 3. `ionic emulate ios`
 
+OR To start server.js with Express
+
+1. `npm install`
+1. `npm start`
+
 Enjoy your Ionic app now :).
 
 <img src="https://cloudup.com/iMmARAM4VJZ+" />
+
