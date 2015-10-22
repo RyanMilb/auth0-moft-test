@@ -57,7 +57,7 @@ angular.module('starter.controllers', [])
 })
 
 .controller('AccountCtrl', function($scope, auth, store, $state, $ionicSideMenuDelegate) {
-  $ionicSideMenuDelegate.logout = function() {
+  $scope.logout = function() {
     auth.signout();
     store.remove('token');
     store.remove('profile');
