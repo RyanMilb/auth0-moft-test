@@ -27,7 +27,7 @@ angular.module('starter.controllers', [])
   
 })
 
-.controller('DashCtrl', function($scope, $http) {
+.controller('DashCtrl', function($scope, $http, $ionicSideMenuDelegate) {
   $scope.callApi = function() {
     // Just call the API as you'd do using $http
     $http({
@@ -39,21 +39,24 @@ angular.module('starter.controllers', [])
       alert("Please download the API seed so that you can call it.");
     });
   };
+   $scope.openMenu = function () {
+    $ionicSideMenuDelegate.toggleLeft();
+  }
 
 })
 
-.controller('ChatsCtrl', function($scope, Chats) {
+.controller('ChatsCtrl', function($scope, Chats, $ionicSideMenuDelegate) {
   $scope.chats = Chats.all();
   $scope.remove = function(chat) {
     Chats.remove(chat);
   }
 })
 
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
+.controller('ChatDetailCtrl', function($scope, $stateParams, Chats, $ionicSideMenuDelegate) {
   $scope.chat = Chats.get($stateParams.chatId);
 })
 
-.controller('AccountCtrl', function($scope, auth, store, $state) {
+.controller('AccountCtrl', function($scope, auth, store, $state, $ionicSideMenuDelegate) {
   $scope.logout = function() {
     auth.signout();
     store.remove('token');
@@ -61,4 +64,9 @@ angular.module('starter.controllers', [])
     store.remove('refreshToken');
     $state.go('login', {}, {reload: true});
   };
+  
+  $scope.openMenu = function () {
+    $ionicSideMenuDelegate.toggleLeft();
+  }
+  
 });
