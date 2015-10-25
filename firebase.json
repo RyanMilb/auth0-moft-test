@@ -1,0 +1,9 @@
+{
+  "firebase": "ionic-auth-login",
+  "public": "public",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
