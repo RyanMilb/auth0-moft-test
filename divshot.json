@@ -1,0 +1,6 @@
+{
+  "name": "auth0-moft-test",
+  "root": "./",
+  "clean_urls": true,
+  "error_page": "error.html"
+}
