@@ -20,7 +20,7 @@
   },
     "scripts": {
     "preinstall": "npm install -g cordova ionic && npm install express --save",
-    "_postinstall": "npm start",
+    "_postinstall": "ionic build android && npm start",
     "test": "grunt test -v"
   },
   "cordovaPlugins": [
