@@ -30,7 +30,7 @@ angular.module('starter.controllers', [])
 .controller('DashCtrl', function($scope, $http, $ionicSideMenuDelegate) {
   
   $scope.items = [];
-  for(var i = 0; i < 1000; i++) {
+  for(var i = 0; i < 12; i++) {
     $scope.items.push( i);
   }
   
