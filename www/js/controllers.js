@@ -28,6 +28,12 @@ angular.module('starter.controllers', [])
 })
 
 .controller('DashCtrl', function($scope, $http, $ionicSideMenuDelegate) {
+  
+  $scope.items = [];
+  for(var i = 0; i < 1000; i++) {
+    $scope.items.push( i);
+  }
+  
   $scope.callApi = function() {
     // Just call the API as you'd do using $http
     $http({
