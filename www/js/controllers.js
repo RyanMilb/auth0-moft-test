@@ -27,11 +27,10 @@ angular.module('starter.controllers', [])
   
 })
 
-.controller('DashCtrl', function($scope, $http, $ionicSideMenuDelegate) {
-  
-  $scope.items = [];
-  for(var i = 0; i < 12; i++) {
-    $scope.items.push( i);
+.controller('DashCtrl', function($scope, Chats, $http, $ionicSideMenuDelegate) {
+  $scope.chats = Chats.all();
+  $scope.remove = function(chat) {
+    Chats.remove(chat);
   }
   
   $scope.callApi = function() {

@@ -4,47 +4,49 @@ angular.module('starter.services', [])
   // Might use a resource here that returns a JSON array
 
   // Some fake testing data
-  var chats = [{
+  var predictions = [{
     id: 0,
-    name: 'Ben Sparrow',
-    lastText: 'You on your way?',
-    face: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
+    name: 'Will Hillary win the democratic nomination in 2016?',
+    details:'Will Hillary win the democratic nomination in 2016? Will Hillary win the democratic nomination in 2016? Will Hillary win the democratic nomination in 2016?',
+    img: 'https://gastatic.com/blog/wp-content/uploads/2015/10/ClintonGunControl.jpg'
   }, {
     id: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
-    face: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
+    name: 'Will the federal reserve raise interest rates in Q1 2016?',
+    details:'Will the federal reserve raise interest rates in Q1 2016? Will the federal reserve raise interest rates in Q1 2016? Will the federal reserve raise interest rates in Q1 2016?',
+    img: 'http://www.thelibertybeacon.com/wp-content/uploads/2013/07/The-US-Federal-Reserve-II-A1.jpg'
   }, {
     id: 2,
-    name: 'Andrew Jostlin',
-    lastText: 'Did you get the ice cream?',
-    face: 'https://pbs.twimg.com/profile_images/491274378181488640/Tti0fFVJ.jpeg'
+    name: 'Will the price of bitcoin hit over $5,000 USD in 2016?',
+    details:'Will the price of bitcoin hit over $5,000 USD in 2016? Will the price of bitcoin hit over $5,000 USD in 2016? Will the price of bitcoin hit over $5,000 USD in 2016?',
+    img: 'http://dealbreaker.com/uploads/2013/10/bitcoins.jpg'
   }, {
     id: 3,
-    name: 'Adam Bradleyson',
-    lastText: 'I should buy a boat',
-    face: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-  }, {
-    id: 4,
-    name: 'Perry Governor',
-    lastText: 'Look at my mukluks!',
-    face: 'https://pbs.twimg.com/profile_images/491995398135767040/ie2Z_V6e.jpeg'
+    name: 'Will there be a magnitude 8.0 or higher earthquake in California by the end of 2015?',
+    details:'Will there be a magnitude 8.0 or higher earthquake in California by the end of 2015? Will there be a magnitude 8.0 or higher earthquake in California by the end of 2015? Will there be a magnitude 8.0 or higher earthquake in California by the end of 2015?',
+    img: 'https://tribkcpq.files.wordpress.com/2015/10/s055588098-300.jpg'
   }];
 
   return {
     all: function() {
-      return chats;
+      return predictions;
     },
     remove: function(chat) {
-      chats.splice(chats.indexOf(chat), 1);
+      predictions.splice(predictions.indexOf(chat), 1);
     },
     get: function(chatId) {
-      for (var i = 0; i < chats.length; i++) {
-        if (chats[i].id === parseInt(chatId)) {
-          return chats[i];
+      for (var i = 0; i < predictions.length; i++) {
+        if (predictions[i].id === parseInt(chatId)) {
+          return predictions[i];
         }
       }
       return null;
     }
   };
-});
+})
+
+
+.service('PredictionFeedService', function () {
+  this.sayHello = function () {
+    console.log('hello');
+  };
+});;

@@ -4,19 +4,22 @@
   </ion-nav-buttons> 
   <ion-content class="has-header padding">
     
-    <div class="list card" collection-repeat="item in items"
+    <div class="list card" collection-repeat="prediction in chats"
       collection-item-width="'100%'"
 >
 
-    <div class="item item-body">
-      <img class="full-image" src="https://gastatic.com/blog/wp-content/uploads/2015/10/ClintonGunControl.jpg">
+    <div class="item item-text-wrap item-divider">
+      <h2>{{prediction.name}}</h2>
+    </div>      
+    
+    <div class="item item-body item-text-wrap">
+      <img class="full-image" src="{{prediction.img}}">
       <p>
-        This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
-        the content is from a card-body consisting of an image and paragraph text.
+        {{prediction.details}}
       </p>
     </div>
   
-    <div class="item tabs tabs-secondary tabs-icon-left">
+    <div class="item tabs tabs-secondary tabs-icon-left item-divider">
       <a class="tab-item" href="#">
         <i class="icon ion-cash"></i>
         Predict
@@ -29,7 +32,7 @@
         <i class="icon ion-information-circled"></i>
         Details
       </a>
-      <a class="tab-item" href="#">
+      <a class="tab-item" href="#"  ng-click="remove(chat)" >
         <i class="icon ion-close-circled"></i>
         Clear
       </a>
