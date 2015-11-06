@@ -2,7 +2,44 @@
   <ion-nav-buttons side="left">
     <button class="button button-icon button-clear ion-navicon" ng-click="openMenu()"></button>
   </ion-nav-buttons> 
-  <ion-content class="has-header padding">
+    
+    <ion-content class="has-header padding">
+      <div class="list card" ng-repeat="prediction in chats"
+      collection-item-width="'100%'">
+
+    <div class="item item-text-wrap item-divider">
+      <h2>{{prediction.name}}</h2>
+    </div>      
+    
+    <div class="item item-body item-text-wrap">
+      <img class="full-image" src="{{prediction.img}}">
+      <p>
+        {{prediction.details}}
+      </p>
+    </div>
+  
+    <div class="item tabs tabs-secondary tabs-icon-left item-divider">
+      <a class="tab-item" href="#">
+        <i class="icon ion-cash"></i>
+        Predict
+      </a>
+      <a class="tab-item" href="#">
+        <i class="icon ion-star"></i>
+        Save
+      </a>
+      <a class="tab-item" href="#">
+        <i class="icon ion-information-circled"></i>
+        Details
+      </a>
+      <a class="tab-item" href="#"  ng-click="remove(chat)" >
+        <i class="icon ion-close-circled"></i>
+        Clear
+      </a>
+    </div>        
+    </ion-content>
+    
+ <!--
+    <ion-content class="has-header padding">
     
     <div class="list card" collection-repeat="prediction in chats"
       collection-item-width="'100%'"
@@ -37,5 +74,5 @@
         Clear
       </a>
     </div>        
-  </ion-content>
+  </ion-content> -->
 </ion-view>
